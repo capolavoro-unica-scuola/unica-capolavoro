@@ -1,0 +1,45 @@
+:root {
+    --gradientePrimarioBordo: #7722ff;
+    --gradienteSecondarioBordo: #ff00dd;
+    --gradientePrimarioBG: #7722ff;
+    --gradienteSecondarioBG: #6f00ff;
+    --font: #d7d9fa;
+}
+
+@font-face {
+    font-family: 'Monocraft';
+    src: url('../font/Monocraft.ttf');
+}
+
+/* Globale */
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.90rem;
+    height: 100%;
+    background: linear-gradient(to top, var(--gradientePrimarioBG), var(--gradienteSecondarioBG));
+    color: var(--font);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Utilità */
+
+.monocraftFont {
+    font-family: 'Monocraft';
+}
+
+.center {
+    border: 1px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 900px;
+    height: 500px;
+}
+
+.bordoColorato {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(0.25turn, var(--gradientePrimarioBordo), var(--gradienteSecondarioBordo), var(--gradientePrimarioBordo));
+    border-image-slice: 1;
+}

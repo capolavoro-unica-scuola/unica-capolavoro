@@ -1,0 +1,151 @@
+:root {
+    --gradientePrimario: #7722ff;
+    --gradienteSecondario: #ff00dd;
+    --bgOndeSopra: #550080;
+    --bgOndeSotto: #2a2991;
+    --bgCarta: #6466e0; 
+    --ombraCarta: #443692;
+    --voto: #e9af0f;
+}
+
+/* Contenitore carta d'identità */
+.carta {
+    font-family: 'Monocraft';
+    width: 1000px;
+    padding: 10px;
+    height: 40%;
+    border-radius: 20px;
+    background-color: var(--bgCarta);
+    border-right: 5px solid var(--gradienteSecondario);
+    border-bottom: 5px solid var(--gradientePrimario);
+    border-left: 3px solid var(--gradientePrimario);
+    border-top: 3px solid var(--gradienteSecondario);
+    box-shadow: 10px 10px 50px var(--ombraCarta);
+}
+
+/* Foto e media generale */
+.contenitoreImmagini {
+    float: left;
+    padding: 10px;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 100px;
+}
+
+.voto {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #270083 !important;
+    line-height: 100px;
+    background-color: var(--voto);
+    width: 100px;
+    height: 100px;
+    margin-left: 65px;
+    border-radius: 100px;
+}
+
+/* Informazioni personali */
+.contenitoreTesti {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+
+.testi {
+    padding: 5px;
+    width: 530px;
+}
+
+/* Animazione slide in della carta */
+.animazione {
+    position: absolute;
+    left: -50%;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 50%;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 50%;
+    }
+}
+
+/* Onde sullo sfondo */
+.contenitoreOndeSotto {
+    height: 1%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--bgOndeSotto);
+}
+
+.contenitoreOndeSopra {
+    height: 1%;
+    width: 100%;
+    position: absolute;
+    transform: rotate(0.5turn);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--bgOndeSopra);
+}
+
+.onda {
+    position: absolute;
+    width: 6400px;
+    top: -198px;
+    height: 198px;
+    animation: onda 7s ease infinite;
+}
+
+.ondaBlu {
+    background: url('../img/onda_blu.svg') repeat-x;
+}
+
+.ondaViola {
+    background: url('../img/onda_viola.svg') repeat-x;
+}
+
+.onda:nth-of-type(2) {
+    top: -168px;
+    animation: swell 4s ease infinite;
+}
+
+/* Animazioni onde */
+@keyframes onda {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+
+    0%,
+    100% {
+        transform: translate(0, -30px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+}

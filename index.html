@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title traduzione">Classe</title>
+
+    <script src="js/lingua.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/globale.css">
+</head>
+
+<body>
+
+    <select name="lingua" class="dropdownLingue" onchange="
+        let selezione = document.getElementsByClassName('dropdownLingue')
+        cambiaLingua(selezione[0].value)                
+    ">
+
+        <option value="it">🇮🇹 - Italiano</option>
+        <option value="en">🇬🇧 - English</option>
+
+    </select>
+
+    <!-- Introduzione -->
+    <div class="contenitoreTesto">
+        <h1 class="hWarning traduzione" style="color: #df2323;">NOTA BENE</h1>
+        <p class="pWarning traduzione">Il sito è stato parzialmente alterato censurando dati personali o identificativi
+            per via del fatto che è pubblico.
+            Non potendo consegnare uno .zip sulla piattaforma unica, ho preferito hostare il sito come pagina GitHub per
+            condividerlo con un semplice link.
+            Per quanto probabilmente nessuno troverà questa repository, non mi sento a mio agio nel mettere online
+            informazioni
+            personali mie e del resto della classe.
+            Se chiunque stia leggendo questo messaggio non ha idea di cosa sia unica, potete lasciare stare qui, per gli
+            effettivi
+            docenti interessati, potete continuare.
+        </p>
+
+        <hr>
+        <h1 class="hBenvenuto traduzione">Benvenuti nella nostra classe!</h1>
+        <p class="pIntro traduzione">
+            <strong>La nostra è una meravigliosa classe piena dei migliori studenti della scuola, come possono
+                confermare tutti i nostri docenti, di seguito vi lascio all'elenco dei geni che studiano qui:</strong>
+        </p>
+
+    </div>
+
+    <!-- Elenco -->
+    <div>
+        <table>
+            <!-- Header -->
+            <tr>
+                <th class="thNome traduzione">Nome</th>
+                <th class="thCognome traduzione">Cognome</th>
+                <th class="thNumero traduzione">Numero</th>
+            </tr>
+            <!-- Nomi -->
+            <tr>
+                <td>Mario</td>
+                <td>...</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Christian</td>
+                <td>...</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>
+                    <a style="color: aquamarine;" href="html/info.html" class="aSito traduzione">Sito</a>
+                </td>
+                <td><a style="color: aquamarine;" href="html/info.html" class="aPersonale traduzione">Personale</a></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Vincenzo</td>
+                <td>...</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Giuseppe</td>
+                <td>...</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Giovanni</td>
+                <td>...</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Mario</td>
+                <td>...</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Mirko</td>
+                <td>...</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Loris</td>
+                <td>...</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Giuseppe</td>
+                <td>...</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Giuseppe</td>
+                <td>...</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Fabio</td>
+                <td>...</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Alessio</td>
+                <td>...</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Salvatore</td>
+                <td>...</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>Agostino</td>
+                <td>...</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Tommaso</td>
+                <td>...</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>Giorgio</td>
+                <td>...</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Giuseppe</td>
+                <td>...</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Giovanni</td>
+                <td>...</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Nicola</td>
+                <td>...</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Danilo</td>
+                <td>...</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Giovanni</td>
+                <td>...</td>
+                <td>22</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Immaggini -->
+    <hr style="width: 50%; color: cornflowerblue;">
+    <div class="contenitoreTesto">
+        <p class="pImg traduzione">Qui di seguito abbiamo invece la grande cultura di questa classe:</p>
+    </div>
+
+    <!-- Telefono -->
+    <div style="text-align: center;">
+        <img class="telefono" src="img/telefono.jpg"
+            alt="Abuso costante di elettricità perchè nessuno carica il telefono prima di venire a scuola" width="700">
+        <strong class="pTelefono descrizioneImg traduzione">Abuso costante di elettricità scolastica perchè nessuno
+            carica il telefono prima di venire a
+            scuola</strong>
+    </div>
+
+    <!-- Muro -->
+    <div class="divMuro divFlex">
+        <img src="img/muro.jpg" alt="Opere d'arte sparse su ogni parete" width="700">
+        <strong class="pMuro descrizioneImg traduzione">Opere d'arte sparse su ogni parete</strong>
+    </div>
+
+
+</body>
+
+</html>
